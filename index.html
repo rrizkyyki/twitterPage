@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div class="content">
+    <div class="row">
+        <div class="col-sm-7 col-md-7">
+            <img src="img/twiter.png" class="banner" alt="">
+            <i class="bi-twitter centered text-white"></i>
+        </div>
+        <div class="col text-banner">
+            <i class="bi-twitter"></i>
+            <h1 class="heading-text">Happening now</h1>
+            <h3 class="subheading-text">Join twitter today.</h3>
+            <div class="button-wrap">
+                <button class="btn-google"><b>Sign in with Google</b> <img class="google-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png"  alt=""></button>
+                <button class="btn-apple"><b>Sign in with Apple</b> <img class="apple-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png" alt=""></button>
+                <p class="d-flex justify-content-center">or</p>
+                <button class="btn-phone"data-bs-toggle="modal" data-bs-target="#exampleModal"><b>Sign in with phone or email</b></button>
+                <p style="font-size: 10px; padding-top: 5px;">By signing up, you agree to the <a href="">Terms of Service</a> and <a href="">Privacy Policy</a>, including <a href="">Cookie Use</a>.</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" style="max-width: 600px;">
+        <div class="modal-content">
+            <div class="closebtn">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="padding-left: 90px; padding-right: 90px;">
+            <h2 class="modal-title pb-4" id="exampleModalLabel">Create Your Account</h2>
+                <form>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
+                    </div>
+                    <div class="mb-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone">
+                    </div>
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <p><b>Date of birth</b></p>
+                    <p style="font-size: 15px; font-weight: 90px; margin-top: -15px;">This will not be shown publicly. Confirm your own age, even if this account is for a business, a pet, or something else.</p>
+                    <div class="row pb-3">
+                        <div class="col-6">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 180px;">
+                                  Month
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px; margin-left: -15px;">
+                                  Day
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 100px;">
+                                  Year
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button style="width: 100%; height: 50px; border-radius: 50px;" type="submit" class="btn btn-primary"><b>Submit</b></button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer style="padding-left: 15px; padding-right: 15px;">
+        <div class="row">
+            <div class="col">
+                <a href="">About</a>
+                <a href="">Help Center</a>
+                <a href="">Terms Of Service</a>
+                <a href="">Privacy Policy</a>
+                <a href="">Cookie Policy</a>
+                <a href="">Accessibility</a>
+                <a href="">Ads Info</a>
+                <a href="">Blog</a>
+                <a href="">Status</a>
+                <a href="">Careers</a>
+                <a href="">Brand Resources</a>
+                <a href="">Advertising</a>
+                <a href="">Marketing</a>
+                <a href="">Twitter For Business</a>
+                <a href="">Developers</a>
+            </div>
+            <div class="row">
+                <div class="col d-flex" style="justify-content: center;">
+                <a href="">Directory</a>
+                <a href="">Settings</a>
+                <a href="">&copy; 2022 Twitter, inc.</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
